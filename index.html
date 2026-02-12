@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/styles.css"> 
     <meta charset="UTF-8">
     <title>Personal Online CV</title>
 </head>
@@ -8,14 +9,17 @@
 
 <header>
     <section>
+    <div class="header-box">
         <h1>Danica Almonia</h1>
         <p>IT Student | Web Systems and Technologies</p>
+    </div>
     </section>
 </header>
 
+<div class="container">
 <main>
 
-<section>
+<section class="card">
     <h2>About Me</h2>
     <p>I am Danica R. Almonia, an IT student who is still learning in this subject.
             I enjoy singing and dancing, and during my free time, I often scroll through
@@ -33,7 +37,7 @@
     </p>
 </section>
 
-<section>
+<section class="card">
     <h2>Skills</h2>
     <ul>
         <li>Web Development
@@ -62,7 +66,7 @@
     </ul>
 </section>
 
-<section>
+<section class="card">
     <h2>Projects</h2>
     <ul>
         <li>
@@ -82,7 +86,7 @@
     </ul>
 </section>
 
-<section>
+<section class="card">
     <h2>Education</h2>
     <table border="1" cellspacing="0" cellpadding="5">
         <tr>
@@ -119,17 +123,18 @@
     </table>
 </section>
 
-<section>
+<section class="card">
     <h2>Contact Me</h2>
     <form>
-        <input type="text" placeholder="Name"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <textarea placeholder="Message"></textarea><br><br>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
         <button type="submit">Send</button>
     </form>
 </section>
 
 </main>
+</div>
 
 <footer>
     <p>&copy; 2026 Danica Almonia. All rights reserved.</p>
