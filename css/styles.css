@@ -131,3 +131,37 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
+
+
+.dark-mode {
+background-color:#222;
+color:#222;
+}
+
+
+.hidden {
+display:none;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark-mode header,
+body.dark-mode section {
+    background-color: #000000;
+    color: white;
+}
+
+body.dark-mode .container {
+    background-color: #000000;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode a:hover {
+    color: #ff69b4;
+}
