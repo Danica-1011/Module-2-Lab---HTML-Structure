@@ -1,9 +1,21 @@
 console.log("js/script.js")
 
 const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click",function(){
+
+themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "Light Mode";
+        themeToggle.style.backgroundColor = "#ffb8d6";
+        themeToggle.style.color = "#000000";
+    } else {
+        themeToggle.textContent = "Dark Mode";
+        themeToggle.style.backgroundColor = "#333333";
+        themeToggle.style.color = "#ffffff";
+    }
 });
+
 
 const toggleSkills = document.getElementById("toggleSkills");
 const skillsSection = document.getElementById("skillsSection");
