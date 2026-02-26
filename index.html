@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <meta charset="UTF-8">
+    <title>Personal Online CV</title>
+</head>
+<body>
+
+<header  >
+    <section>
+    <div class="header-box">
+        <h1>Danica Almonia</h1>
+        <p>IT Student | Web Systems and Technologies</p>
+        <button id="themeToggle">Dark Mode</button> 
+    </div>
+    </section>
+</header>
+
+<div class="container">
+<main>
+
+    <section class="card">
+        <h2>About Me</h2>
+        <p>I am Danica R. Almonia, an IT student who is still learning in this subject.
+                I enjoy singing and dancing, and during my free time, I often scroll through
+                social media watching videos. Through this course, I aim to improve my skills
+                and gain a better understanding of web systems and technologies.
+    </p>
+
+        <img src="images/profile.jpg" alt="Profile photo" style="height:200px;">
+
+        <p>
+            Email:
+            <a href="mailto:almonia.danica1@gmail.com">almonia.danica1@gmail.com</a><br>
+            GitHub:
+            <a href="https://github.com/Danica-1011" target="_blank">github.com/Danica-1011</a>
+        </p>
+    </section>
+    <button id="toggleSkills">Show/Hide Skills</button> 
+
+    <section class="card" id="skillsSection">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development
+                <ul>
+                    <li>Frontend
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Backend
+                        <ul>
+                            <li>MySQL</li>
+                            <li>Basic PHP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Tools
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Tetris Game</strong>
+                <p>A classic Tetris game developed with interactive controls, scoring system, and game logic implementation.</p>
+            </li>
+
+            <li>
+                <strong>Brick Breaker Game</strong>
+                <p>An arcade-style game featuring collision detection, ball movement, and score tracking.</p>
+            </li>
+
+            <li>
+                <strong>Calculator Application</strong>
+                <p>A functional calculator that performs basic arithmetic operations with a clean interface.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Education</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>Level</th>
+                <th>Institution</th>
+                <th>Year Graduated</th>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>USTP - CDO</td>
+                <td>2028</td>
+            </tr>
+            <tr>
+                <td>Senior High School</td>
+                <td>Kauswagan National High School</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Junior High School</td>
+                <td>Bayabas National High School</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Elementary School</td>
+                <td>Bongbongon Elementary School</td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td>Kindergarten</td>
+                <td>Bongbongon Elementary School</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+        </table>
+    </section>
+
+
+    <section class="card">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" id="submitBtn">Send</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Danica Almonia. All rights reserved.</p>
+</footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
