@@ -1,7 +1,8 @@
+import Card from "./Card";
+
 function About() {
   return (
-    <section className="card">
-      <h2>About Me</h2>
+    <Card title="About Me">
       <p>
         I am Danica R. Almonia, an IT student who is still learning in this subject.
         I enjoy singing and dancing, and during my free time, I often scroll through
@@ -30,7 +31,7 @@ function About() {
           {" "}github.com/Danica-1011
         </a>
       </p>
-    </section>
+      </Card>
   );
 }
 

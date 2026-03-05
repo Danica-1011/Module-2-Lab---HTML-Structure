@@ -9,6 +9,41 @@ import "./index.css";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaSript",
+    "React"
+  ];
+
+  const educationData = [
+    {
+      year: "2028",
+      program: "College",
+      school: "USTP-CDO"
+    },
+    {
+      year: "2024",
+      program: "Senior High School",
+      school: "Kauswagan National High School"
+    },
+    {
+      year: "2022",
+      program: "Junior High School",
+      school: "Bayabas National High School"
+    },
+    {
+      year: "2018",
+      program: "Elementary School",
+      school: "Bongbongon Elementary School"
+    },
+    {
+      year: "2012",
+      program: "Kindergarten",
+      school: "Bongbongon Elementary School"
+    }
+  ];
+
   document.body.style.backgroundColor = darkMode ? "#0a0a0a" : "#f4f4f4";
   document.body.style.padding = darkMode ? "0" : "20px";
 
@@ -18,8 +53,8 @@ function App() {
 
       <main>
         <About />
-        <Skills />
-        <Education />
+        <Skills skills={skills} />
+        <Education education={educationData}/>
         <Contact />
       </main>
 

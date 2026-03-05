@@ -1,4 +1,4 @@
-function Education() {
+function Education({ education }) {
   return (
     <section className="card">
       <h2>Education</h2>
@@ -13,31 +13,13 @@ function Education() {
         </thead>
 
         <tbody>
-          <tr>
-            <td>College</td>
-            <td>USTP - CDO</td>
-            <td>2028</td>
-          </tr>
-          <tr>
-            <td>Senior High School</td>
-            <td>Kauswagan National High School</td>
-            <td>2024</td>
-          </tr>
-          <tr>
-            <td>Junior High School</td>
-            <td>Bayabas National High School</td>
-            <td>2022</td>
-          </tr>
-          <tr>
-            <td>Elementary School</td>
-            <td>Bongbongon Elementary School</td>
-            <td>2018</td>
-          </tr>
-          <tr>
-            <td>Kindergarten</td>
-            <td>Bongbongon Elementary School</td>
-            <td>2012</td>
-          </tr>
+          {education.map((item, index) => (
+            <tr key={index}>
+              <td>{item.program}</td>
+              <td>{item.school}</td>
+              <td>{item.year}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </section>

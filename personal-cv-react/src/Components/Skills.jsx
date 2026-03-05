@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Skills() {
+function Skills({skills}) {
   const [showSkills, setShowSkills] = useState(true); 
 
   return (
