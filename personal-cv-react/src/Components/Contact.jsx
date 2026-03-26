@@ -10,12 +10,31 @@ function Contact() {
 
     if (!name || !email || !message) {
       alert("Please fill in all fields!");
-    } else {
-      alert(`Thank you ${name}! Message sent successfully!`);
-      setName("");
-      setEmail("");
-      setMessage("");
+      return;
     }
+
+    fetch("http://localhost/cv-api/process.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name: name })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.message) {
+          alert(data.message);
+        } else {
+          alert("Unexpected error occurred.");
+        }
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch(err => {
+        alert("Failed to connect to server.");
+        console.error(err);
+      });
   };
 
   return (
